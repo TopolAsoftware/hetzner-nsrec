@@ -5,6 +5,16 @@
 ###
 ########################################################################
 ########################################################################
+### terraform requires declaration of required providers
+###
+terraform {
+  required_providers {
+    hetznerdns = {
+          source  = "timohirt/hetznerdns"
+    }
+  }
+}
+########################################################################
 data "hetznerdns_zone" "info" {
   name = var.zone
 }
