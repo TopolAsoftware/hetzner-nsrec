@@ -1,4 +1,8 @@
 
+variable "token" {
+  description = "Hetzner DNS API token"
+}
+
 variable "zone" {
     description = "DNS Server zone (domain name w/o host)"
 }

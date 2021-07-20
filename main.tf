@@ -15,6 +15,8 @@ terraform {
   }
 }
 
+provider "hetznerdns" { apitoken = var.token }
+
 ########################################################################
 data "hetznerdns_zone" "info" {
   name = var.zone
