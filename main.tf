@@ -5,19 +5,6 @@
 ###
 ########################################################################
 ########################################################################
-### terraform requires declaration of required providers in each module
-###
-terraform {
-  required_providers {
-    hetznerdns = { 
-          source  = "timohirt/hetznerdns" 
-    }
-  }
-}
-
-provider "hetznerdns" { apitoken = var.token }
-
-########################################################################
 data "hetznerdns_zone" "info" {
   name = var.zone
 }
